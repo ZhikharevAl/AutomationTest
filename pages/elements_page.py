@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from generator.generator import generated_person, generated_file
 from locators.elements_page_locators import TextBoxPageLocators, CheckBoxPageLocators, RadioButtonPageLocators, \
     WebTablePageLocators, ButtonsPageLocators, LinksPageLocators, UploadAndDownloadPageLocators, \
-    DynamicPropertiesPageLocators
+    DynamicPropertiesPageLocators as DinamicPropertiesPage
 from pages.base_page import BasePage
 import random
 
@@ -215,7 +215,7 @@ class LinksPage(BasePage):
             return check_file
 
     class DynamicPropertiesPage(BasePage):
-        locators = DynamicPropertiesPageLocators()
+        locators = DinamicPropertiesPage()
 
         def check_enable_button(self):
             try:
