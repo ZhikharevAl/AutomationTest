@@ -7,6 +7,7 @@ class SortablePageLocators:
     TAB_GRID = (By.CSS_SELECTOR, 'a[id="demo-tab-grid"]')
     GRID_ITEM = (By.CSS_SELECTOR, 'div[id="demo-tabpane-grid"] div[class="list-group-item list-group-item-action"]')
 
+
 class SelectablePageLocators:
     TAB_LIST = (By.CSS_SELECTOR, "a[id='demo-tab-list']")
     LIST_ITEM = (
@@ -27,6 +28,7 @@ class ResizablePageLocators:
     RESIZABLE_HANDLE = (
         By.CSS_SELECTOR, 'div[id="resizable"] span[class="react-resizable-handle react-resizable-handle-se"]')
     RESIZABLE = (By.CSS_SELECTOR, 'div[id="resizable"]')
+
 
 class DroppablePageLocators:
     # Simple
@@ -53,6 +55,7 @@ class DroppablePageLocators:
     WILL_REVERT = (By.CSS_SELECTOR, 'div[id="revertable"]')
     NOT_REVERT = (By.CSS_SELECTOR, 'div[id="notRevertable"]')
     DROP_HERE_REVERT = (By.CSS_SELECTOR, '#revertableDropContainer #droppable')
+
 
 class DraggablePageLocators:
     # Simple

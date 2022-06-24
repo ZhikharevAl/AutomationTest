@@ -3,7 +3,6 @@ import re
 import time
 import allure
 
-
 from locators.interactions_page_locators import SortablePageLocators, SelectablePageLocators, ResizablePageLocators, \
     DroppablePageLocators, DraggablePageLocators
 
@@ -97,6 +96,7 @@ class ResizablePage(BasePage):
         min_size = self.get_px_from_width_height(self.get_max_min_size(self.locators.RESIZABLE))
         return max_size, min_size
 
+
 class DroppablePage(BasePage):
     locators = DroppablePageLocators()
 
@@ -150,6 +150,7 @@ class DroppablePage(BasePage):
         time.sleep(1)
         position_after_revert = revert.get_attribute('style')
         return position_after_move, position_after_revert
+
 
 class DraggablePage(BasePage):
     locators = DraggablePageLocators()

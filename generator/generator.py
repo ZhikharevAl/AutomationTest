@@ -4,8 +4,8 @@ from data.data import Person, Color, Date
 
 from faker import Faker
 
-faker_ru=Faker('ru_RU')
-fake_en=Faker('En')
+faker_ru = Faker('ru_RU')
+fake_en = Faker('En')
 Faker.seed()
 
 
@@ -25,8 +25,8 @@ def generated_person():
 
 
 def generated_file():
-    path=rf'C:\Users\1\PycharmProjects\AutomationTest\filetest{random.randint(0, 999)}.txt'
-    file=open(path, 'w+')
+    path = rf'C:\Users\1\PycharmProjects\AutomationTest\filetest{random.randint(0, 999)}.txt'
+    file = open(path, 'w+')
     file.write(f'Hello World{random.randint(0, 999)}')
     file.close()
     return file.name, path
